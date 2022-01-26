@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Script from "next/script";
+import Image from 'next/image'
 
 export default function FirstPost() {
   return (
@@ -21,6 +22,12 @@ export default function FirstPost() {
           <a>Back to home</a>
         </Link>
       </h2>
+      <Image
+        src="/img/vercel.svg"
+        alt="logo"
+        width={500/2}
+        height={500/2}
+      />
     </>
   );
 }
